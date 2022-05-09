@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body{
+				      background-color:green;
+				      text-align: center;
+				    }
+				    button
+				    {
+				      padding: 10px;
+				    }
+				    button:hover
+				    {
+				     background-color: purple;
+				     color: white;
+				    }
+				    input[type="text"]
+			    {
+				     padding: 10px;
+				      border-radius: 3px;
+				    }
+				   #res
+				   {
+			     margin-right: -60px;
+				   }
+    </style>
+  </head>
+  <body>
+  
+  
+     <form action="add" method="post">
+     <label for="">Enter A first number</label>
+    <input type="text" name="t1" id="sam" value="" />
+    <br />
+		 <br />
+				    <label for="">Enter A second number</label>
+			      <input type="text" name="t2" id="sam1" value="" />      
+			      <br />
+				    <br />
+				    <label for="">Result is</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			      <input type="text" name="m1" id="res" value="" />
+    <br /> <br />
+              <button type="submit" onclick="add()">Add</button>
+              <button type="submit" onclick="sub()">Sub</button>
+              <button type="submit" onclick="mul()">mul</button>
+              <button type="submit" onclick="div()">div</button>
+    
+    
+    
+    </form>
+    
+    				   
+				   
+				    
+				    
+      <script>
+        alert("cal");
+        function add()
+        {
+          var a = parseInt(document.getElementById("sam").value);
+     
+          var b = parseInt(document.getElementById("sam1").value);
+     
+          var C = a+b;
+          
+          document.getElementById("res").value=C;
+          alert(C);
+        }
+        
+        
+        function sub()
+        {
+          var a = parseInt(document.getElementById("sam").value);
+     
+          var b = parseInt(document.getElementById("sam1").value);
+     
+          var C = a-b;
+          
+          document.getElementById("res").value=C;
+          alert(C);
+        }
+        
+        
+        function mul()
+        {
+          var a = parseInt(document.getElementById("sam").value);
+     
+          var b = parseInt(document.getElementById("sam1").value);
+     
+          var C = a*b;
+          
+          document.getElementById("res").value=C;
+          alert(C);
+        }
+        
+        
+        
+        function div()
+        {
+          var a = parseInt(document.getElementById("sam").value);
+     
+          var b = parseInt(document.getElementById("sam1").value);
+     
+          var C = a/b;
+          
+          document.getElementById("res").value=C;
+          alert(C);
+        }
+        
+      </script>
+  </body>
+</html>
